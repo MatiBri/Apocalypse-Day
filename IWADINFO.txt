@@ -1,0 +1,15 @@
+//Por ahora el juego omitirá que sea un archivo IWAD en su totalidad, hasta tener una paleta de colores adecuada
+//Y otras funciones que harán que el juego no dependa de otros
+
+
+/*
+IWad
+{
+	Name = "Apocalypse Day"
+	Autoname = "NombreCustom"
+	Game = "Doom"
+	Config = "Doom"
+	StartupType = "Hexen"
+	BannerColors = "#FFFFFF", "#000000"
+}
+*/

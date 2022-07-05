@@ -1,0 +1,16 @@
+//El bloque de GLDEFS permite definir varios effectos que SÓLO SON SOPORTADOS POR PROCESADORES AVANZADOS
+//COMO OPENGL Y VULKAN
+//Esto quiere decir que el hardware va a tener limitaciónes con otros renders como Software
+
+//Skybox 1
+
+//Debe tener éste orden específico para que el Skybox cubra bien toda el área principal del juego
+Skybox SkyP fliptop
+{
+	front
+	right
+	back
+	left
+	top
+	bottom
+}

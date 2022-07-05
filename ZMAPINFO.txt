@@ -1,0 +1,180 @@
+//******MAPAS******//
+
+map E1A2 "Total chaos"
+{
+	Grinding_Polyobj
+	Par = 20 //Par 20 sigfinica el tiempo que toma en finalizar el mapa. Aparece como speedrun al final de cada mapa
+	Music = E1MUS1
+	Next = E1A3
+	SecretNext = MAP31
+	Cluster = 20
+	Sky1 = SkyP, 0.1
+	SkyRotate = 0.1, 0.1, 0.1
+	ResetHealth
+	ResetInventory
+}
+
+map E1A3 "Under the sewers"
+{
+	Grinding_Polyobj
+	Par = 20 //Par 20 sigfinica el tiempo que toma en finalizar el mapa. Aparece como speedrun al final de cada mapa
+	Music = E1MUS2
+	Next = E1A2
+	SecretNext = MAP31
+	//Cluster = ninguno por ahora
+}
+
+//******CLUSTERS******//
+
+Cluster 20 //Mapas del 1 al 10
+{
+	Pic = "NEWLAVA2"
+	Music = INTERMS1
+	ExitText = "You realize that the entire city is",
+	"on high alert, the world is facing",
+	"an unprecedented fatal crisis",
+	"that no one knows how it will",
+	"end.",
+	" ",
+	"You are in shock, afraid and feel",
+	"like the body is paralyzed.", 
+	"Still, you continue on your way.",
+	"You are forced to proceed", 
+	"through the sewers as all routes", 
+	"have been destroyed. But a little",
+	"bad smell is not going to stop you.",
+	" ",
+	"'I have to get my daughter back'", 
+	"You say with tears in your eyes."
+}
+
+//******EPISODIOS******//
+//Definición de Episodios
+ClearEpisodes
+Episode E1A2
+{
+	Name = "Doomsday"
+	//Key = "A"
+}
+
+//******DIFICULTADES******//
+
+ClearSkills
+
+//Nivel de dificultad: Muy fácil
+Skill baby
+{
+	Name = "You're a baby"
+	MustConfirm = "Are you sure that you want to play at this skill? Your honor is in game."
+	AutoUseHealth
+	AmmoFactor = 4.0
+	DropAmmoFactor = 2.0
+	DamageFactor = 0.5
+	RespawnTime = 0
+	Aggressiveness = 0.2
+	SpawnFilter = baby
+	MonsterHealth = 0.5
+	Key = 1
+	EasyKey
+}
+
+//Nivel de dificultad: Fácil
+Skill easy
+{
+	Name = "Don't hurt me!"
+	MustConfirm = "C'mon! Play on a higher difficulty."
+	HealthFactor = 1.5
+	ArmorFactor = 1.5
+	AmmoFactor = 3.0
+	DropAmmoFactor = 2.0
+	DamageFactor = 1.0
+	RespawnTime = 0
+	Aggressiveness = 0.4
+	MonsterHealth = 0.8
+	SpawnFilter = easy
+	Key = 2
+}
+//Nivel de dificultad: Normal
+Skill normal
+{
+	Name = "You're not a coward"
+	HealthFactor = 1.0
+	ArmorFactor = 1.0
+	AmmoFactor = 1.0
+	DropAmmoFactor = 1.0
+	RespawnTime = 0
+	Aggressiveness = 0.6
+	MonsterHealth = 1.0
+	SpawnFilter = normal
+	Key = 3
+	DefaultSkill
+}
+//Nivel de dificultad: Difícil
+Skill hard
+{
+	Name = "Man of action"
+	MustConfirm = "You're gonna bleed and scream in pain."
+	AmmoFactor = 1.5
+	DamageFactor = 1.5
+	Aggressiveness = 1.0
+	MonsterHealth = 1.5
+	SpawnFilter = hard
+	Key = 5
+}
+//Nivel de dificultad: Muy difícil
+Skill nightmare
+{
+	Name = "Carnage"
+	MustConfirm = "You're going into an unprecedented carnage, you have no chance of winning."
+	AmmoFactor = 1.0
+	DamageFactor = 2.0
+	SpawnFilter = nightmare
+	MonsterHealth = 2.0
+	Aggressiveness = 1.0
+	RespawnTime = 300 //5 minutos
+	RespawnLimit = 1
+	Key = 5
+}
+
+/*
+//Nivel de dificultad: Rip and tear!
+Skill ripandtear
+{
+	Name = "Kill them all"
+	MustConfirm = "You're going into an unprecedented carnage, you have no chance of winning."
+	AmmoFactor = 2.0
+	DamageFactor = 4.0
+	SpawnFilter = ripandtear
+	MonsterHealth = 3.0
+	Aggressiveness = 1.0
+	RespawnTime = 600 //10 minutos
+	RespawnLimit = 3
+}
+*/
+
+
+//QuitMessages = ""
+
+GameInfo
+{
+	PlayerClasses = "ApocalypseGuy" /*, "DoomPlayer"*/
+}
+
+
+//INTERMISSION
+/*
+	La intermission es la pantalla que va a aparecer al final de cada mapa, de
+	esa forma permite crear fondos personalizados, animados, etc
+*/
+
+/*
+Intermission EndEpisode1
+{
+	TextScreen
+	{
+		Background = "INTERPIC"
+        Music = "D_HOPE"
+        Text = "$TXT_E1_ENDSCREEN"
+	}
+}
+*/

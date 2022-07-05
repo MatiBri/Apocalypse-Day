@@ -1,0 +1,1208 @@
+//******TEXTURAS******//
+
+Texture "CALTXT1", 512, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT1", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT2", 512, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT2", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT3", 512, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT3", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT4", 512, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT4", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT5", 512, 256
+{
+	XScale 2.00
+	YScale 2.00
+	Patch "CALTXT5", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT6", 512, 256
+{
+	XScale 2.00
+	YScale 2.00
+	Patch "CALTXT6", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT7", 512, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT7", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT8", 512, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT8", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT9", 512, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT9", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT10", 512, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT10", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT11", 512, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT11", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT12", 512, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT12", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT13", 64, 60
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT13", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT14", 252, 60
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT14", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT15", 252, 60
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT15", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT16", 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT16", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT17", 32, 32
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT17", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT18", 256, 512
+{
+	XScale 2.00
+	YScale 2.00
+	Patch "CALTXT18", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT19", 256, 512
+{
+	XScale 2.00
+	YScale 2.00
+	Patch "CALTXT19", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT20", 64, 64
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT20", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT21", 64, 64
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT21", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT22", 256, 128
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT22", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT23", 128, 128
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "CALTXT23", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT24", 64, 64
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT24", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT25", 64, 64
+{
+	XScale 2.00
+	YScale 2.00
+	Patch "CALTXT25", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT26", 128, 128
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT26", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT27", 128, 128
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT27", 0, 0
+	worldpanning
+}
+
+Texture "HOSPTXT1", 64, 64
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "HOSPTXT1", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT28", 53, 32
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT28", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT29", 53, 32
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT29", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT30", 36, 109
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT30", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT31", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT31", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT32", 37, 97
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT32", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT33", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT33", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT34", 36, 109
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT34", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT35", 37, 97
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT35", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT36", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT36", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT37", 36, 109
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT37", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT38", 37, 97
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT38", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT39", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT39", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT40", 37, 97
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT40", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT41", 36, 109
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT41", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT42", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT42", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT43", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT43", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT44", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT44", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT45", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT45", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT46", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT46", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT47", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT47", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT48", 31, 94
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT48", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT49", 37, 97
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT49", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT50", 36, 109
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT50", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT51", 256, 256
+{
+	XScale 0.5
+	YScale 0.5
+	Patch "CALTXT51", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT52", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT52", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT53", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT53", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT54", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT54", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT55", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT55", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT56", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT56", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT57", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT57", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT58", 64, 108
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT58", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT59", 64, 108
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT59", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT60", 64, 108
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT60", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT61", 64, 108
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT61", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT62", 64, 108
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT62", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT63", 56, 112
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT63", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT64", 56, 112
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT64", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT65", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT65", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT66", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT66", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT67", 64, 60
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT67", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT68", 64, 60
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT68", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT69", 64, 60
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT69", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT70", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT70", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT71", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT71", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT72", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT72", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT73", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT73", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT74", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT74", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT75", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT75", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT76", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT76", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT77", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT77", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT78", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT78", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT79", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT79", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT80", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT80", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT81", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT81", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT82", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT82", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT83", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT83", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT84", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT84", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT85", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT85", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT86", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT86", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT87", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT87", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT88", 512, 512
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT88", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT89", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT89", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT90", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT90", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT91", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT91", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT92", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT92", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT93", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT93", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT94", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT94", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT95", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT95", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT96", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT96", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT97", 500, 512
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT97", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT98", 512, 512
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT98", 0, 0
+	worldpanning
+}
+
+Texture "CALTXT99", 256, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTXT99", 0, 0
+	worldpanning
+}
+
+Texture "CALTX100", 256, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX100", 0, 0
+	worldpanning
+}
+
+Texture "CALTX101", 500, 512
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX101", 0, 0
+	worldpanning
+}
+
+Texture "CALTX102", 256, 256
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX102", 0, 0
+	worldpanning
+}
+
+Texture "CALTX103", 256, 256
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX103", 0, 0
+	worldpanning
+}
+
+Texture "CALTX104", 256, 256
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX104", 0, 0
+	worldpanning
+}
+
+Texture "CALTX105", 256, 256
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX105", 0, 0
+	worldpanning
+}
+
+Texture "CALTX106", 255, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX106", 0, 0
+	worldpanning
+}
+
+Texture "CALTX107", 64, 255
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "CALTX107", 0, 0
+	worldpanning
+}
+
+//******PUERTAS******//
+Texture "PUERTA01", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA01", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA02", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA02", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA03", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA03", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA04", 128, 128
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA04", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA05", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA05", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA06", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA06", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA07", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA07", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA08", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA08", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA09", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA09", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA10", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA10", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA11", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA11", 0, 0
+	worldpanning
+}
+
+Texture "PUERTA12", 42, 70
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "PUERTA12", 0, 0
+	worldpanning
+}
+
+//******VENTANAS******//
+
+Texture "VENTXT01", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "VENTXT01", 0, 0
+	worldpanning
+}
+
+Texture "VENTXT02", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "VENTXT02", 0, 0
+	worldpanning
+}
+
+Texture "VENTXT03", 64, 64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "VENTXT03", 0, 0
+	worldpanning
+}
+
+//******SWITCHES******//
+Texture "CODKEY01", 190, 130
+{
+	XScale 4.000
+	YScale 4.000
+	Patch "CODKEY01", 0, 0
+	worldpanning
+}
+
+Texture "CODKEY02", 190, 130
+{
+	XScale 4.000
+	YScale 4.000
+	Patch "CODKEY02", 0, 0
+	worldpanning
+}
+
+Texture "CODKEY03", 190, 130
+{
+	XScale 4.000
+	YScale 4.000
+	Patch "CODKEY03", 0, 0
+	worldpanning
+}
+
+Texture "ACCKEY01", 190, 130
+{
+	XScale 4.000
+	YScale 4.000
+	Patch "ACCKEY01", 0, 0
+	worldpanning
+}
+
+Texture "ACCKEY02", 190, 130
+{
+	XScale 4.000
+	YScale 4.000
+	Patch "ACCKEY02", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT01", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT01", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT02", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT02", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT03", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT03", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT04", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT04", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT05", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT05", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT06", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT06", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT07", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT07", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT08", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT08", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT09", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT09", 0, 0
+	worldpanning
+}
+
+Texture "BTNTXT10", 32, 32
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "BTNTXT10", 0, 0
+	worldpanning
+}
+
+//******ESCALERAS******//
+
+Texture "ESCTXT1", 32, 16
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "ESCTXT1", 0, 0
+	worldpanning
+}
+
+//******DUCTOS DE VENTILACIÓN******//
+
+Texture "DCTSTXT1",	64,	64
+{
+	XScale 1.0
+	YScale 1.0
+	Patch "DCTSTXT1", 0, 0
+	worldpanning
+}
+
+//******REJAS******//
+
+//Siguen en desarrollo
+
+//******TEXTURAS DE TERCEROS******//
+
+//TEXTURAS ORIGINALES DE DOOM MODIFICADAS
+Flat NEWWATER, 64, 64
+{
+	Patch FWATER1, 0, 0
+}
+
+Flat NEWLAVA1, 64, 64
+{
+	Patch NEWLAVA1, 0, 0
+}
+
+Flat NEWLAVA2, 256, 64
+{
+	Patch NEWLAVA2,	0,	0
+}
+
+//Texturas del videojuego Duke Nukem 3D - 3D Realms
+//Conversion: Tormentor667
+//Extraído de: Realm667
+//Autor original: 3D Realms
+
+Texture "DNCITY13", 128, 128
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "DNCITY13", 0, 0
+	worldpanning
+}
+
+//Texturas extraídas de un usuario de los foros de ZDoom
+//Autor original: LazyGamer
+Texture "TILE01", 256, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "TILE01", 0, 0
+	worldpanning
+}
+
+Texture "TILE02", 256, 256
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "TILE02", 0, 0
+	worldpanning
+}
+
+//Texturas sacadas de la página de Realm667
+//Autor original: Gothic
+texture "BSRATXT1", 168, 68
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "BSRATXT1", 0, 0
+	worldpanning
+}
+
+texture "BSRATXT2", 155, 60
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "BSRATXT2", 0, 0
+	worldpanning
+}
+
+texture "DNSUB11", 128, 32
+{
+	XScale 1.00
+	YScale 1.00
+	Patch "DNSUB11", 0, 0
+	worldpanning
+}

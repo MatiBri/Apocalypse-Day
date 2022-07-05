@@ -1,0 +1,93 @@
+//DEFINICIÓN DE SONIDOS EN EL JUEGO
+/*
+Audios extraídos de: 
+	https://freesound.org 
+	https://www.sounds-resource.com
+	
+
+*/
+//ÍTEMS
+hpsm	hpsm	//HP Pequeño - Autor: KeshaFilm
+hpmd	hpmd	//HP Medio - Propiedad del videojuego "Black Mesa". Subido por: Cooper B. Chance, Krown
+hpbg	hpbg	/*HP Grande - Propiedad del videojuego "Half-Life". Subido por Cooper B.Chance, Tropicon
+Information: Software: File created by GoldWave.
+GoldWave copyright (C) Chris Craig
+*/
+
+hlmt	hlmt	//Sonido del casco (armadura pequeña)
+blpf	blpf	//Sonido chaleco antibalas (armadura mediana)
+hblpf	hblpf	//Sonido traje militar (armadura grande)
+
+key1	key1	//Sonido de llaves (Llaves generales, no las tarjetas de acceso)
+
+doorsnd1	doorsnd1	//Acceso denegado cuando el jugador intenta abrir una puerta sin tener la llave/tarjeta
+
+//Switches
+accsnd01	accsnd01
+
+
+//Vidrio/Espejos rompiendose
+GLASS   DSGLASS
+$limit	GLASS		4
+
+//Ventiladores de ductos rompiendose
+VENTBUST	VENTBUST
+$limit	VENTBUST		5
+
+//ROCOLA PARA EL BAR (Prueba)
+BARMUS1	BARMUS1 // Nombre original: The Saga - Karl Casey @ White Bat Audio
+$AMBIENT 58 BARMUS1	POINT 1.5	continuous	1.0
+BARMUS2	BARMUS2	// Nombre original: Nightscapes - Karl Casey @ White Bat Audio
+$AMBIENT 57 BARMUS2	POINT 1.5	continuous	1.0
+BARMUS3	BARMUS3	// Nombre original: Miamy Sky - Karl Casey @ White Bat Audio
+$AMBIENT 56 BARMUS3	POINT 1.5	continuous	1.0
+
+//Voz personaje
+VOZSFX1	VOZSFX1
+$AMBIENT 55 VOZSFX1 POINT	1.5	continuous	1.0
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////INICIO ARMAS//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//Uzi
+uzifire UZIFIR
+
+//Drummle
+weapons/drummlefire	drumfire
+weapons/drummleout	drumout
+weapons/drummlein	drumin
+weapons/dryfire		dryfire
+
+//Uber minigun
+//Sonidos de: Croteam
+//Código de lolo_is_cool
+weapons/minigunhold DSMGMID
+weapons/minigunup dsmgup
+weapons/minigundown dsmgdown
+weapons/minigun DSMINIGN
+
+//Model 1887
+Weapons/MSSFIR  MSSFIR //Codigo de JoeyTD
+//Sonido de CoD: MW2
+
+
+//Efectos de sonido de ambiente (SFX)
+scrsfx1		scrsfx1		//Gritos de multitud de personas
+srnsfx1		srnsfx1		//Sirenas de policia
+shtsfx1		shtsfx1		//Disparos a la distancia
+carsfx1		carsfx1		//Alarma de auto
+altsfx1		altsfx1		//Alerta nuclear
+lavsfx1		lavsfx1		//Lava
+
+//$AMBIENT es el comando del tipo de sonido que será
+//los valores son el número lógico que se le asignaran a los sonidos en UDB
+//luego sigue el nombre del sonido
+//El tipo de sonido (En este caso POINT hace que el sonido )
+$AMBIENT 59	lavsfx1	POINT 1.5	continuous	1.0
+$AMBIENT 60 scrsfx1	POINT 1.5	CONTINUOUS	1.0
+$AMBIENT 61 srnsfx1	POINT 1.5	CONTINUOUS	1.0
+$AMBIENT 62 shtsfx1	WORLD	random	1.0 60	1.0
+$AMBIENT 63 carsfx1	POINT 1.5	CONTINUOUS	1.0
+$AMBIENT 64 altsfx1	WORLD	random	1.0 120	0.4
+

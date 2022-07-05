@@ -1,0 +1,6 @@
+/*
+BIGFONT
+{
+	Template BIGFONT%03d
+}
+*/

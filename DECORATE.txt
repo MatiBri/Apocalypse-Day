@@ -1,0 +1,746 @@
+//BLOQUE DE CREACIÓN DE ACTORES (Objetos) para el motor de UDB
+//Apocalypse Day - GZDoom
+
+//Jugador: Apocalypse Man
+Actor ApocalypseGuy : PLAYERPAWN //Playerpawn es la clase base para los actores de jugadores. Al hacer herencia de él se pueden crear personajes nuevos
+{
+	Speed 1
+	Health 100
+	PainChance 255
+	Player.DisplayName "TheGuy"
+	Player.CrouchSprite "PLYC"
+	Player.Face "STC"	//Nombre de los MugShots para el HUD
+	//Player.StartItem "Uzi"
+	Player.StartItem "Fist"
+	//Player.StartItem "Clip", 0
+	Player.WeaponSlot 1, Fist, Chainsaw
+	Player.WeaponSlot 2, Pistol
+	Player.WeaponSlot 3, Shotgun, SuperShotgun
+	Player.WeaponSlot 4, Chaingun
+	Player.WeaponSlot 5, RocketLauncher
+	Player.WeaponSlot 6, PlasmaRifle
+	Player.WeaponSlot 7, BFG9000
+	Player.ColorRange 112, 127
+	Player.ColorSet 0, "Green",         0x70, 0x7F,  0x72
+	Player.ColorSet 1, "Gray",          0x60, 0x6F,  0x62 // Called "Indigo" originally so as to have a unique initial
+	Player.ColorSet 2, "Brown",         0x40, 0x4F,  0x42
+	Player.ColorSet 3, "Red",           0x20, 0x2F,  0x22
+	// Doom Legacy additions
+	Player.ColorSet 4, "Light Gray",    0x58, 0x67,  0x5A
+	Player.ColorSet 5, "Light Brown",   0x38, 0x47,  0x3A
+	Player.ColorSet 6, "Light Red",     0xB0, 0xBF,  0xB2
+	Player.ColorSet 7, "Light Blue",    0xC0, 0xCF,  0xC2
+
+		States
+		{
+		  Spawn:
+			PLAY A -1
+			Loop
+		  See:
+			PLAY ABCD 4 
+			Loop
+		  Missile:
+			PLAY E 12
+			Goto Spawn
+		  Melee:
+			PLAY F 6 BRIGHT
+			Goto Missile
+		  Pain:
+			PLAY G 4 
+			PLAY G 4 A_Pain
+			Goto Spawn
+		  Death:
+			PLAY H 0 A_PlayerSkinCheck("AltSkinDeath")
+		  Death1:
+			PLAY H 10
+			PLAY I 10 A_PlayerScream
+			PLAY J 10 A_NoBlocking
+			PLAY KLM 10
+			PLAY N -1
+			Stop
+		  XDeath:
+			PLAY O 0 A_PlayerSkinCheck("AltSkinXDeath")
+		  XDeath1:
+			PLAY O 5
+			PLAY P 5 A_XScream
+			PLAY Q 5 A_NoBlocking
+			PLAY RSTUV 5
+			PLAY W -1
+			Stop
+		  AltSkinDeath:
+			PLAY H 6
+			PLAY I 6 A_PlayerScream
+			PLAY JK 6
+			PLAY L 6 A_NoBlocking
+			PLAY MNO 6
+			PLAY P -1
+			Stop
+		  AltSkinXDeath:
+			PLAY Q 5 A_PlayerScream
+			PLAY R 0 A_NoBlocking
+			PLAY R 5 A_SkullPop
+			PLAY STUVWX 5
+			PLAY Y -1
+			Stop
+		  }
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////INICIO PROPS//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+//OBJETO : Cono de tránsito
+Actor Cono 20002
+{
+
+//$Category Decoraciones/Ciudad
+	Radius 20
+	Height 30
+	+SOLID
+	+PUSHABLE
+	
+	States
+	{
+		Spawn:
+			CONO A -1
+			Stop
+	}
+}
+
+//OBJETO : Bloque de concreto
+Actor Concreto 20003
+{
+//$Category Decoraciones/Ciudad
+	Radius 20
+	Height 30
+	+SOLID
+	
+	States
+	{
+		Spawn:
+			CNCR A -1
+			Stop
+	}
+}
+
+//OBJETO : Ladrillo
+Actor Ladrillo 20004
+{
+//$Category Decoraciones/Ciudad
+	Radius 20
+	Height 30
+	+SOLID
+	
+	States
+	{
+		Spawn:
+			LDRO A -1
+			Stop
+	}
+}
+
+//OBJETO : Foco/Luz de calle
+Actor Foco 20005
+{
+//$Category Decoraciones/Ciudad
+	Radius 20
+	Height 30
+	-SOLID
+	+NOGRAVITY
+	States
+	{
+		Spawn:
+			FOCO A -1
+			Stop
+	}
+}
+
+//OBJETO : Spray de pintura
+Actor SprayPintura 20006
+{
+//$Category Decoraciones/Ciudad
+	Radius 20
+	Height 30
+	-SOLID
+	
+	States
+	{
+		Spawn:
+			SPRY A -1
+			Stop
+	}
+}
+
+
+////////////////////////////////////////////////////////////////////////////////
+////////////////////////////////FIN PROPS////////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////INICIO ÍTEMS//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//OBJETO : Frasco de píldoras (salud pequeña)
+Actor SmallHP : Health 20049
+{
+//$Category Decoraciones/HP
+	Radius 20
+	Height 30
+	Inventory.PickupMessage "You take some pain pills."
+	Inventory.PickupSound "hpsm"
+	Inventory.Amount 5
+	Inventory.MaxAmount 200
+	Inventory.Icon "HPSMA0"
+	Health.LowMessage 5, "Better start praying."
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	States
+	{
+		Spawn:
+			HPSM A -1
+			Stop
+	}
+}
+
+//OBJETO : Kit de primeros auxilios (paquete mediano de salud)
+Actor MediumHP : Health 20050
+{
+//$Category Decoraciones/HP
+	Radius 20
+	Height 30
+	Inventory.PickupMessage "You take a first aid kit."
+	Inventory.PickupSound "hpmd"
+	Inventory.Amount 15
+	Inventory.MaxAmount 100
+	Health.LowMessage 10, "You're lucky you found it."
+	States
+	{
+		Spawn:
+			HPMD A -1
+			Stop
+	}
+}
+
+//OBJETO : Kit médico (paquete grande de salud)
+Actor BigHP : Health 20051
+{
+//$Category Decoraciones/HP
+	Radius 20
+	Height 30
+	Inventory.PickupMessage "You take a big med-kit."
+	Inventory.PickupSound "hpbg"
+	Inventory.Amount 35
+	Inventory.MaxAmount 100
+	Health.LowMessage 15, "It seems that it is not your time to die."
+	States
+	{
+		Spawn:
+			HPBG A -1
+			Stop
+	}
+}
+
+//OBJETO : Casco policial
+Actor PoliceHelmet : BasicArmorBonus 20052
+{
+//$Category Decoraciones/Armadura
+	Radius 20
+	Height 30
+	Inventory.PickupMessage "You take a police helmet."
+	Inventory.PickupSound "hlmt"
+	INVENTORY.Icon "CSCOA0"
+	Armor.SaveAmount 2
+	Armor.MaxSaveAmount 200
+	//Armor.MaxBonus 5
+	Armor.SavePercent 25.667
+	//Armor.MaxFullAbsorb 200
+	+COUNTITEM
+	+INVENTORY.ALWAYSPICKUP
+	States
+	{
+		Spawn:
+			CSCO A -1
+			Stop
+	}
+}
+
+//OBJETO: Chaleco antibalas
+Actor BulletProof : BasicArmorPickup 20053
+{
+//$Category Decoraciones/Armadura
+	Radius 30
+	Height 30
+	Inventory.PickupMessage "You take a bulletproof vest."
+	Inventory.PickupSound "BLPF"
+	Inventory.Icon "ARMRA0"
+	Armor.SaveAmount 50
+	Armor.SavePercent 35
+	States
+	{
+		Spawn:
+			ARMR A 7
+			ARMR B 6 Bright
+			Loop
+	}
+}
+
+//OBJETO: Traje militar (Chaleco antibalas grande)
+Actor HeavyBulletProof : BasicArmorPickup 20054
+{
+//$Category Decoraciones/Armadura
+	Radius 20
+	Height 20
+	Inventory.PickupMessage "You take a military bulletproof suit."
+	Inventory.PickupSound "HBLPF"
+	Inventory.Icon "HARMA0"
+	Armor.SaveAmount 100
+	Armor.SavePercent 75
+	States
+	{
+		Spawn:
+			HARM A 7
+			HARM B 6 Bright
+			Loop
+	}
+}
+
+// LLaves
+Actor BlueKey : Doomkey 20055
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Blue Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "BLKYA0"
+	States
+	{
+		Spawn:
+			BLKY A -1
+			Stop	
+	}
+}
+
+Actor RedKey : Doomkey 20056
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Red Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "RDKYA0"
+	States
+	{
+		Spawn:
+			RDKY A -1
+			Stop	
+	}
+}
+
+Actor GreyKey : Doomkey 20057
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Grey Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "GRKYA0"
+	States
+	{
+		Spawn:
+			GRKY A -1
+			Stop	
+	}
+}
+
+Actor PurpleKey : Doomkey 20058
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Purple Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "PRKYA0"
+	States
+	{
+		Spawn:
+			PRKY A -1
+			Stop	
+	}
+}
+
+Actor GreenKey : Doomkey 20059
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Green Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "GNKYA0"
+	States
+	{
+		Spawn:
+			GNKY A -1
+			Stop	
+	}
+}
+
+Actor YellowKey : Doomkey 20060
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Yellow Key."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "YWKYA0"
+	States
+	{
+		Spawn:
+			YWKY A -1
+			Stop	
+	}
+}
+
+//Tarjetas de acceso (También llaves)
+Actor RedKeyCard : Doomkey 20061
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Red keycard."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "RDCDA0"
+	States
+	{
+		Spawn:
+			RDCD A -1
+			Stop	
+	}
+}
+
+Actor BlueKeyCard : Doomkey 20062
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Blue keycard."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "BLCDA0"
+	States
+	{
+		Spawn:
+			BLCD A -1
+			Stop	
+	}
+}
+
+Actor YellowKeyCard : Doomkey 20063
+{
+//$Category Decoraciones/Llaves
+	Inventory.PickupMessage "You take the Yellow keycard."
+	Inventory.PickupSound "KEY1"
+	Inventory.Icon "YWCDA0"
+	States
+	{
+		Spawn:
+			YWCD A -1
+			Stop	
+	}
+}
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////FIN ÍTEMS//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+
+////////////////////////////////////////////////////////////////////////////////
+///////////////////////////////INICIO ARMAS/////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+//Me creo una Actor (clase) que hará que en las armas a las que lo llame, estas hagan
+//un zoom del HUD que creará un efecto de estar apuntando mejor con el arma a distancia
+Actor ZoomArmas : Inventory
+{
+	Inventory.MaxAmount 1
+}
+
+
+//UZI: Código original hecho por: Juan "JacKThERiPPeR"
+//Edición y ampliación del código: Matias Brizuela
+//Se hará saber qué partes fueron modificadas y añadidas por el creador de éste proyecto
+Actor Uzi : Weapon 20100
+{
+//$Category Decoraciones/Armas
+//$Title Uzi
+	Inventory.PickupMessage "Pickup an Uzi. Let's go!"
+	Inventory.PickupSound "misc/w_pkup"
+	WEAPON.SelectionOrder 700 //Indica la importancia que tendrá el Arma cuando el
+	//jugador se quede sin munición de alguna otra arma
+	Weapon.SlotNumber 2 //Es el número del arma al pasar por el inventario del arsenal
+	Weapon.AmmoUse1 1 //Cantidad de balas que usará el arma
+	Weapon.AmmoGive 32
+	Weapon.AmmoType1 "Clip" //El arma usará los Clips de las municiónes de la pistola y chaingun de DooM
+	Inventory.Icon "USMGA0"
+	AttackSound "uzifire" //Nombre establecido en el bloque SNDINFO
+	States
+	{
+		Spawn:
+			USMG A 1 //El 1 representa el número de tics (segundos) de animación
+			//1 tic equivale a 1/35 segundos, que es la mitad de un segundo
+			Loop
+		Ready:
+			UZIG D 0 A_JumpIfInventory("ZoomArmas", 1, "ZoomWEP")	//Añadido
+			UZIG D 1 A_WeaponReady
+			Loop
+		ZoomWEP:
+			TNT1 A 1 A_WeaponReady
+			Goto Ready
+		Deselect:
+			TNT1 A 0 A_TakeInventory("ZoomArmas", 1) //Añadido
+			TNT1 A 0 A_ZoomFactor(1)//Añadido
+			
+			UZIG D 1 A_Lower //Esta funcion es la responsable de bajar el arma cuando se queda sin
+			//munición o se quiera cambiar de arma por otra
+			Loop
+		Select:
+			UZIG D 1 A_Raise //Esta función es responsable de levantar el arma y de entrar al estado Ready
+			Loop
+		Fire:
+			UZIG B 0 A_JumpIfInventory("ZoomArmas", 1, "FireZoom") //Modificado
+			UZIG B 1 BRIGHT A_FireBullets(2,2,1,8, "BulletPuff", 1) //Modificado
+			//Estos parámetros específican la velocidad de las balas
+			//La trayectoria que tendrán, la cantidad de daño que harán y el tipo de ataque que tendrá
+			UZIG C 1
+			UZIG A 1
+			Goto Ready //Una vez que termine de disparar, volverá a la secuencia de Ready
+			
+	}
+}
+
+//DRUMMLE: Código original hecho por: "PillowBlaster" (Realms667)
+//Edición y ampliación del código: Matias Brizuela
+//Se hará saber qué partes fueron modificadas y añadidas por el creador de éste proyecto
+ACTOR DrummleShotgun : Weapon 20101
+{
+//$Category Decoraciones/Armas
+//$Title Drummle auto-shotgun
+	Radius 20	//Añadido
+	Height 16	//Añadido
+   Inventory.PickupSound "misc/w_pkup"
+   Inventory.PickupMessage "You got Drummle auto-shotgun!"
+   Weapon.SelectionOrder 900 //Añadido. Esto indica que cuando otra arma que tengo mas importancia
+   //Se quede sin munición, automáticamente pasará a la siguiente que tenga menor importancia para ser usada
+   Weapon.AmmoType1 "DrummleClip"
+   Weapon.AmmoType2 "Shell"
+   Weapon.AmmoGive1 0
+   Weapon.AmmoGive2 12
+   Weapon.AmmoUse1 1
+   Weapon.AmmoUse2 0
+   Weapon.Kickback 30
+   Weapon.SlotNumber 3
+   Weapon.UpSound "weapons/DrummleIn"
+   AttackSound "weapons/Drummlefire"
+   +AMMO_OPTIONAL
+   +NOAUTOFIRE
+   +NOALERT
+   States
+   {
+   Spawn:
+      ASHG X -1
+      Loop
+   Ready:
+      ASHG A 1 A_WeaponReady(WRF_ALLOWRELOAD) //MODIFICADO: Se añadió la propiedad
+	  //WRF_ALLOWRELOAD, esto permite que al presionar el botón de Reload, el arma recargue
+      Loop
+   Deselect:
+      ASHG A 1 A_Lower
+      ASHG A 0 A_Lower
+      Loop
+   Select:
+      ASHG A 1 A_Raise
+      ASHG A 0 A_Raise
+      Loop
+   Fire:
+      ASHF A 0 A_JumpIfNoAmmo("DryFire")
+      ASHF A 0 A_GunFlash
+      ASHF A 0 A_AlertMonsters
+      ASHF A 0 A_Recoil(1)
+      ASHF A 0 A_FireBullets(5.5, 0, 7, 5, "BulletPuff")
+      ASHF AB 1 BRIGHT
+      ASHG BCDCBA 1
+      Goto Ready
+   DryFire:
+      ASHG A 10 A_PlaySound("weapons/dryfire")
+      Goto Reload
+   AltFire:
+   Reload:
+      ASHG A 1
+      ASHG A 0 A_JumpIfInventory("DrummleClip", 12, "Ready")
+      ASHG A 0 A_JumpIfInventory("Shell", 1, 1)
+      Goto Ready
+      ASHR ABCDE 1
+      ASHR A 0 A_PlaySound("weapons/drummleout")
+      ASHR FFFFFFFFGHI 1
+      ASHR J 25
+      Goto ReloadWorking
+   ReloadWorking:
+      TNT1 A 0 A_TakeInventory("Shell", 1)
+      TNT1 A 0 A_GiveInventory("DrummleClip", 1)
+      TNT1 A 0 A_JumpIfInventory("DrummleClip", 12,2)
+      TNT1 A 0 A_JumpIfInventory("Shell",1,2)
+      TNT1 A 0
+      Goto ReloadFinish
+      TNT1 A 0
+      Goto ReloadWorking
+   ReloadFinish:
+      ASHR KLMN 1
+      ASHR A 0 A_PlaySound("weapons/drummlein")
+      ASHR OOOOOOOOPQRS 1
+      ASHG A 10
+      Goto Ready
+   Flash:
+       TNT1 A 1 A_Light2
+       TNT1 A 1 A_Light1
+       TNT1 A 0 A_Light0
+       Stop
+   }
+}
+ACTOR DrummleClip : Ammo
+{
+Inventory.MaxAmount 12
+Ammo.BackpackAmount 0
+Ammo.BackpackMaxAmount 12
+Inventory.Icon ASHGX0
+}
+
+//Código original de: lolo_is_cool (Realms667)
+ACTOR UberMinigun : Weapon 20102
+{
+//$Category Decoraciones/Armas
+//$Title Uber mini-gun
+	Radius 20 //Añadido
+	Height 16 //Añadido
+    Inventory.PickupMessage "You got the UberMinigun!"
+    Inventory.PickupSound "misc/w_pkup"
+    Weapon.SelectionOrder 400
+    Weapon.Kickback 90
+    Weapon.AmmoType "Clip"
+    Weapon.AmmoGive 100
+    Weapon.AmmoUse 1
+	Weapon.SlotNumber 4 //Añadido
+    States
+    {
+    Spawn:
+       MINI A -1
+       LOOP
+    Ready:
+       MING A 9 A_WeaponReady
+       Loop
+    Deselect: 
+       MING A 1 A_Lower
+	   NULL AA 0 A_LOWER
+       LOOP
+    Select: 
+       MING A 1 A_Raise
+	   NULL AA 0 A_RAISE
+       LOOP
+    Fire:
+       MING A 0 A_PlaySound("weapons/minigunup")
+       MING BCDEFGH 2 
+       MING CEGABCDEFGHACEGE 1 
+    Hold:
+       MINF A 0 A_GunFlash
+	   MINF A 0 A_PlayweaponSound("weapons/minigun")
+	   MINF A 0 A_PlaySound("weapons/minigunhold")
+       MINF A 1 BRIGHT A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+	   //MINF A 0 A_PlayweaponSound("weapons/minigun")
+       MINF C 1 BRIGHT //A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+	  // MINF A 0 A_PlayweaponSound("weapons/minigun")
+       MINF B 1 BRIGHT //A_FireBullets (5.6, 0, 2, 5, "BulletPuff")
+       MING C 0 A_ReFire
+       MING A 0 A_PlaySound("weapons/minigundown")
+       MING A 1
+       MING C 1 
+       MING E 1
+       MING G 1 
+       MING A 1
+       MING B 1 
+       MING C 1
+       MING D 1 
+       MING E 1
+       MING F 1 
+       MING G 1
+       MING H 1
+       MING ABCDEFGH 1
+	   MING ABCDEFGH 2
+       Goto Ready
+    }
+}
+
+actor Model1887 : Weapon 20103
+{
+//$Category Decoraciones/Armas
+//$Title Model1887
+	Radius 20 //Añadido
+	Height 16 //Añadido
+	  Weapon.SelectionOrder 1300
+	  Weapon.AmmoUse 1
+	  Weapon.AmmoGive 8
+	  Weapon. slotNumber 3
+	  attacksound "Weapons/MSSFIR"
+	  Weapon.AmmoType "Shell"
+	  Inventory.PickupMessage "You got the model 1887 shotgun!"
+	States
+	  {
+	  Ready:
+		MSSG A 1 A_WeaponReady
+		Loop
+	  Deselect:
+		MSSG A 1 A_Lower
+		Loop
+	  Select:
+		MSSG A 1 A_Raise
+		Loop
+	  Fire:
+		MSSG A 3
+		MSSG A 0 A_FireBullets (6, 4, 7, 5, "BulletPuff")
+		MSSF AB 2
+		MSSG BC 7
+		MSSG D 5
+		MSSG E 3
+		MSSG CB 4
+		MSSG A 3
+		MSSG A 0 A_ReFire
+		Goto Ready
+	  Flash:
+		TNT1 A 3 Bright A_Light1
+		TNT1 A 3 Bright A_Light2
+		Goto LightDone
+	  Spawn:
+		MSSI A -1
+		Stop
+  }
+}
+
+////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////////FIN ARMAS//////////////////////////////////////
+////////////////////////////////////////////////////////////////////////////////
+
+
+
+//Recurso usado de un archivo .pk3 llamado "smashhudmf.pk3" que permite generar
+//Vidrios y espejos para usarlos como uno quiera. Para este proyecto se usarán para
+//generar espejos y ventanales que se rompen
+//Créditos a: LazyGamer y sus autores originales del archivo
+ACTOR NJGlassShard : GlassShard
+{
+  Radius 5
+  Mass 5
+  Projectile
+  -ACTIVATEPCROSS
+  -ACTIVATEIMPACT
+  BounceType "HexenCompat"
+  BounceFactor 0.3
+  Renderstyle Translucent
+  Alpha 0.4
+  States
+  {
+  Spawn:
+    NJGL ABCDE 4
+    Loop
+  Death:
+    NJGL E 30
+    Stop
+  }
+
+}

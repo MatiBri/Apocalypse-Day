@@ -1,0 +1,79 @@
+//Definiciónes de llaves
+
+CLEARLOCKS //Elimina las llaves originales de DooM
+
+//Definición de llaves
+LOCK 1 Doom
+{
+	BlueKey
+	Message "This area needs a blue key. I must find it."
+	REMOTEMESSAGE "You need a blue key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 2 Doom
+{
+	RedKey
+	MESSAGE "This area needs a red key. I must find it."
+	REMOTEMESSAGE "You need a blue key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 3 Doom
+{
+	GreyKey
+	MESSAGE "This area needs a grey key. I must find it."
+	REMOTEMESSAGE "You need a grey key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 4 Doom
+{
+	PurpleKey
+	MESSAGE "This area needs a purple key. I must find it."
+	REMOTEMESSAGE "You need a purple key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 5 Doom
+{
+	GreenKey
+	MESSAGE "This area needs a green key. I must find it."
+	REMOTEMESSAGE "You need a green key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 6 Doom
+{
+	YellowKey
+	MESSAGE "This area needs a yellow key. I must find it."
+	REMOTEMESSAGE "You need a yellow key to activate this object."
+	MAPCOLOR 255 0 0
+}
+
+Lock 7 Doom
+{
+	RedKeyCard
+	MESSAGE "I need to find a red keycard to open this door."
+	REMOTEMESSAGE "You need a red keycard to activate this object"
+	LOCKEDSOUND doorsnd1
+	MAPCOLOR 255 0 0
+}
+
+Lock 8 Doom
+{
+	BlueKeycard
+	MESSAGE "I need to find a blue keycard to open this door."
+	REMOTEMESSAGE "You need a blue keycard to activate this object."
+	LOCKEDSOUND doorsnd1
+	MAPCOLOR 255 0 0
+}
+
+Lock 9 Doom
+{
+	YellowKeyCard
+	MESSAGE "I need to find a yellow keycard to open this door."
+	REMOTEMESSAGE "You need a yellow keycard to activate this object."
+	LOCKEDSOUND doorsnd1
+	MAPCOLOR 255 0 0
+}

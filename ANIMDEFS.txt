@@ -1,0 +1,162 @@
+/*Bloque Animdefs. 
+	Provee flexibilidad adicional, lo que permite no solo animar texturas con cualquier cantidad de imágenes
+	en cualquier velocidad de animación, y no solo crear texturas estándar de interruptor de 
+	encendido / apagado, sino combinar las dos. Los interruptores se pueden animar como texturas e incluso
+	se pueden configurar para reproducir sonidos
+	
+	Permite crear muchas otras funciones, prácticamente hacer lo que uno quiera
+	al ser un bloque tan flexible
+*/
+
+//texture define una textura de pared
+//flat define una textura del suelo
+
+//Luces de NEON
+texture	NEONTX1
+	pic NEONTX1	tics 64
+	pic NEONTX2	tics 8
+	pic NEONTX3	tics 8
+	pic	NEONTX4	tics 8
+	pic	NEONTX5	tics 8
+	pic	NEONTX6	tics 8
+	pic	NEONTX7	tics 8
+	pic	NEONTX8	tics 8
+	pic	NEONTX9	tics 8
+	pic NEONTX1	tics 64
+	pic NEONTX9	tics 8
+	pic NEONTX10	tics 8
+	pic	NEONTX11	tics 8
+	pic	NEONTX12	tics 8
+	pic NEONTX13	tics 8
+	pic NEONTX14	tics 8
+	pic NEONTX15	tics 8
+	pic	NEONTX16	tics 8
+	pic	NEONTX17	tics 8
+	pic	NEONTX1	tics 64
+	pic NEONTX14	tics 8
+	pic	NEONTX10	tics 8
+	pic NEONTX14	tics 8
+	pic	NEONTX10	tics 8
+	pic NEONTX14	tics 8
+	pic	NEONTX10	tics 8
+	pic	NEONTX1	tics 64
+	pic	NEONTX18	tics 8
+	pic NEONTX19	tics 8
+	pic	NEONTX18	tics 8
+	pic NEONTX19	tics 8
+	pic	NEONTX18	tics 8
+	pic NEONTX19	tics 8
+
+//Luces de NEON al revés
+texture	NEONTX1R
+	pic NEONTX1R	tics 64
+	pic NEONTX2R	tics 8
+	pic NEONTX3R	tics 8
+	pic	NEONTX4R	tics 8
+	pic	NEONTX5R	tics 8
+	pic	NEONTX6R	tics 8
+	pic	NEONTX7R	tics 8
+	pic	NEONTX8R	tics 8
+	pic	NEONTX9R	tics 8
+	pic NEONTX1R	tics 64
+	pic NEONTX9R	tics 8
+	pic NEOTX10R	tics 8
+	pic	NEOTX11R	tics 8
+	pic	NEOTX12R	tics 8
+	pic NEOTX13R	tics 8
+	pic NEOTX14R	tics 8
+	pic NEOTX15R	tics 8
+	pic	NEOTX16R	tics 8
+	pic	NEOTX17R	tics 8
+	pic	NEONTX1R	tics 64
+	pic NEOTX14R	tics 8
+	pic	NEOTX10R	tics 8
+	pic NEOTX14R	tics 8
+	pic	NEOTX10R	tics 8
+	pic NEOTX14R	tics 8
+	pic	NEOTX10R	tics 8
+	pic	NEONTX1R	tics 64
+	pic	NEOTX18R	tics 8
+	pic NEOTX19R	tics 8
+	pic	NEOTX18R	tics 8
+	pic NEOTX19R	tics 8
+	pic	NEOTX18R	tics 8
+	pic NEOTX19R	tics 8
+//SWITCHS (BOTONES)
+//Switch 1
+switch	ACCKEY01 on sound ACCSND01 pic ACCKEY02	tics 0
+switch	ACCKEY02 off sound ACCSND01 pic	ACCKEY01 tics 0
+
+switch CODKEY01
+on sound ACCSND01
+pic	CODKEY01 tics 8
+pic CODKEY02 tics 8
+pic CODKEY03 tics 8
+
+switch CODKEY01
+off sound ACCSND01
+pic	CODKEY01 tics 8
+pic CODKEY02 tics 8
+pic CODKEY03 tics 8
+
+//Switch 2
+switch BTNTXT01
+on sound Switch1
+pic BTNTXT01	tics 1
+pic BTNTXT02	tics 1
+pic BTNTXT03	tics 1
+pic BTNTXT04	tics 1
+pic BTNTXT05	tics 1
+pic BTNTXT06	tics 1
+pic BTNTXT07	tics 1
+pic BTNTXT08	tics 1
+pic BTNTXT09	tics 1
+pic BTNTXT10	tics 1
+
+switch BTNTXT01
+off sound Switch2
+pic BTNTXT01	tics 1
+pic BTNTXT02	tics 1
+pic BTNTXT03	tics 1
+pic BTNTXT04	tics 1
+pic BTNTXT05	tics 1
+pic BTNTXT06	tics 1
+pic BTNTXT07	tics 1
+pic BTNTXT08	tics 1
+pic BTNTXT09	tics 1
+pic BTNTXT10	tics 0
+	
+//Textura de DOOM modificada para hacer una animación mas fluida
+Warp2	Flat	NEWWATER	1.0 //1.0 Se puede usar un valor float para determinar la velocidad de la animación
+Warp	Flat	NEWLAVA1	1.0
+
+Warp	Flat	NEWLAVA2	1.0
+
+Warp	Flat	NEWORGNS	1.0
+
+Warp	Flat	NEWORGN2	1.0
+//Llaves
+
+/*
+switch BLUKEY02 on sound Switch1 pic BLUKEY04 tics 0
+switch BLUKEY04 off sound Switch2 pic BLUKEY02 tics 0
+
+switch BLKKEY02
+on sound switches/Switch1
+pic BLKKEY02 tics 8 
+pic BLKKEY03 tics 8 
+pic BLKKEY04 tics 8 
+
+off sound switches/Switch2
+pic BLKKEY04 tics 8 
+pic BLKKEY03 tics 8 
+pic BLKKEY02 tics 0
+*/
+
+//Texturas animadas de terceros, texturas extraídas del videojuego Duke Nukem 3D
+//Propiedad de: 3DRealms
+texture DNXFAN01	range	DNXFAN04	tics 4
+
+texture	DNZCIT41	range	DNZCIT39	tics 8
+
+texture	DNZCIT44	range	DNZCIT42	tics 8

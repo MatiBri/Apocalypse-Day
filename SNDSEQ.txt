@@ -1,0 +1,35 @@
+//Secuencia de sonidos
+
+//Este código servirá como secuencia de sonidos para las puertas deslizantes hechas con PolyObjects
+//Ya que los mismos PolyObjects no reciben ninguna secuencia de sonidos, al ser objetos que pueden servir para
+//Todo tipo de objeto movible de una manera diferente o distinta a las puertas comunes definidas en el motor
+
+/*
+:DoorOpenNormal
+	door	door 1
+	play	doors/dr1_open
+	nostopcutoff
+end
+
+:DoorOpenBlazing
+	door	door 2
+	play	doors/dr2_open
+	nostopcutoff
+end
+*/
+
+[DoorNormal
+	Door 0
+	0	DoorOpenNormal
+	1	DoorCloseNormal
+	2	DoorOpenBlazing
+	3	DoorCloseBlazing
+]
+
+[DoorTurbo
+	Door 1
+	0	DoorOpenBlazing
+	1	DoorCloseBlazing
+	2	DoorOpenBlazing
+	3	DoorCloseBlazing
+]

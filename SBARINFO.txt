@@ -1,0 +1,193 @@
+//Caras normales, estas se desplegarán en el momento en que el personaje va recibiendo daño progresivamente
+mugshot "Normal", health2
+{
+	{ST00, ST01, ST02} 17;
+}
+
+mugshot "Normal2", health2
+{
+	{ST11, ST10, ST12} 17;
+}
+
+mugshot "Normal3", health2
+{
+	{ST21, ST22, ST20} 17;
+}
+
+mugshot "Normal4", health2
+{
+	{ST31, ST32, ST30} 17;
+}
+
+mugshot "Normal5", health2
+{
+	{ST41, ST42, ST40} 17;
+}
+//Caras que el personaje hará al momento de recibir daño alguno.
+mugshot "Pain", healthspecial, directional
+{
+	{TR00, KILL0, TL00} 35;
+}
+
+mugshot "Pain2", healthspecial, directional
+{
+	{TR10, KILL1, TL10} 35;
+}
+
+mugshot "Pain3", healthspecial, directional
+{
+	{TR20, KILL2, TL20} 35;
+}
+
+mugshot "Pain4", healthspecial, directional
+{
+	{TR30, KILL3, TL30} 35;
+}
+
+mugshot "Pain5", healthspecial, directional
+{
+	{TR40, KILL4, TL40} 35;
+}
+//Caras que el personaje hará al obtener un arma.
+mugshot "Rampage", health
+{
+	KILL0 1;
+}
+
+mugshot "Rampage2", health
+{
+	KILL1 1;
+}
+
+mugshot "Rampage3", health
+{
+	KILL2 1;
+}
+
+mugshot "Rampage4", health
+{
+	KILL3 1;
+}
+
+mugshot "Rampage5", health
+{
+	KILL4 1;
+}
+//Caras que el personaje hará al recibir un daño muy grave.
+mugshot "Ouch", health
+{
+	OUCH0 35;
+}
+
+mugshot "Ouch2", health
+{
+	OUCH1 35;
+}
+
+mugshot "Ouch3", health
+{
+	OUCH2 35;
+}
+
+mugshot "Ouch4", health
+{
+	OUCH3 35;
+}
+
+mugshot "Ouch5", health
+{
+	OUCH4 35;
+}
+//Caras que el personaje hará al disparar un arma.
+mugshot "Grin", health
+{
+	EVL0 70;
+}
+
+mugshot "Grin2", health
+{
+	EVL1 70;
+}
+
+mugshot "Grin3", health
+{
+	EVL2 70;
+}
+
+mugshot "Grin4", health
+{
+	EVL3 70;
+}
+
+mugshot "Grin5", health
+{
+	EVL4 70;
+}
+//Ítem especial, es la cará que hará al recibir un ítem especial que le otorgue un poder especial.
+mugshot "God"
+{
+	GOD0 -1;
+}
+
+//Cara que el personaje hará al morir.
+mugshot "Death"
+{
+	DEAD0 -1;
+}
+
+
+Statusbar fullscreen, FullScreenOffsets
+{
+	//Personaje
+	//Eje X: A menor número positivo va a la izquierda. A mayor número a la derecha
+	DrawMugShot 5, 8, 190;
+	
+	//Salud
+	//El primer valor es el eje X
+	//El segundo valor es el eje Y, si es positivo el objeto baja, si es negativo sube
+	DrawImage "HEALA0", 20, -2, centerbottom, 500, 500;
+	DrawNumber 3, SMALLFNT, WHITE, health, 82, -20;
+	
+	//Armadura
+	DrawImage "ARMOA0", 20, -24, centerbottom;
+	DrawNumber 3, SMALLFNT,WHITE, armor, whennotzero, 82, -39;
+	
+	//Munición
+	DrawImage ammoicon1, -14, -4, centerbottom;
+	DrawNumber 3, SMALLFNT, White, ammo1, -25,- 20;
+	
+	UsesAmmo
+	{
+		//Munición secundaria e inventario
+		UsesSecondaryAmmo
+		{
+			DrawImage ammoicon2, -14, -22, centerbottom;
+			DrawNumber 3, HUDFONT_DOOM, untranslated, ammo2, -25, -38;
+			InventoryBarNotVisible
+			{
+				DrawSelectedInventory centerbottom, drawshadow, alwaysshowcounter, HUDFONT_DOOM, -14, -39, -26, -56, untranslated;
+			}
+		}
+		//Sin munición secundaria
+		UsesSecondaryAmmo not
+		{
+			InventoryBarNotVisible
+			{
+				DrawSelectedInventory centerbottom, drawshadow, alwaysshowcounter, HUDFONT_DOOM, -14, -21, -26, -38, untranslated;
+			}
+		}
+	}
+	
+	//Sin munición pero con el inventario
+	UsesAmmo not
+	{
+		InventoryBarNotVisible
+		{
+			DrawSelectedInventory centerbottom, drawshadow, alwaysshowcounter, HUDFONT_DOOM, -14, -3, -26, -20, untranslated;
+		}
+	}
+	GameMode singleplayer
+	{
+		DrawKeyBar 6, vertical, reverserows, auto, -20, 2, 0, 3, auto;
+	}
+}

@@ -1,0 +1,5 @@
+IWAD = "apocalypseday.wad"
+STARTUPTITLE = "Apocalypse Day"
+STARTUPCOLORS = "#FFFFFF", "#000000"
+STARTUPTYPE = "Doom"
+STARTUPSONG = "D_DM2TTL"

@@ -1,0 +1,9 @@
+//Bloque DECALDEF que permite dejar huecos o manchas en las paredes por los enemigos o el jugador
+
+Generator Uzi	BulletChip
+
+Generator  DrummleShotgun	BulletChip
+
+Generator UberMinigun	BulletChip
+
+Generator	Model1887	BulletChip
