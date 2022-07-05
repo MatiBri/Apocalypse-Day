@@ -1,0 +1,43 @@
+-----------------CRÉDITOS DE ARMAS-------------------
+
+Uzi:
+	Submitted: Juan "JacKThERiPPeR
+	Decorate: Skulltag (Código)
+	Sprites: 3D Realms, Id Software
+	Sprites Edit: Cory Whittle
+	Sounds: Valve Corporation
+	dea Base: Uzi from Shadow Warrior
+	
+**********************************UBERMINIGUN**********************************
+Info:
+Name: Uber minigun
+Class: Level 4
+Type: Hitscan
+Palette: Doom
+Summon: UberMinigun
+Ammotype: clip
+AltFire: no
+
+Credits:
+Submitted: lolo_is_cool
+Decorate: lolo_is_cool
+Sprites: lolo_is_cool
+Sounds: Croteam
+Idea Base: n/a
+
+**********************************MODEL 1887**********************************
+Name: Model 1887
+Class: 3
+Type: Hitscan
+Palette: Doom
+Summon: Model1887
+Ammo Type: Shell
+Altfire: No
+Powered Mode: No
+
+Submitted: JoeyTD
+Decorate: JoeyTD
+Sprites:id software, JoeyTD
+Sprite Edit: Nope
+Sounds: CoD: MW2
+Idea Base: N/A
